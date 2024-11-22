@@ -1,0 +1,990 @@
+.navbar41-wrapper {
+  display: contents;
+}
+.navbar41-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.navbar41-navbar-interactive {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.navbar41-image1 {
+  height: 3rem;
+}
+.navbar41-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar41-links1 {
+  gap: var(--dl-space-space-twounits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-space-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.navbar41-link11 {
+  text-decoration: none;
+}
+.navbar41-link21 {
+  text-decoration: none;
+}
+.navbar41-link31 {
+  text-decoration: none;
+}
+.navbar41-link41 {
+  text-decoration: none;
+}
+.navbar41-buttons1 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-space-space-twounits);
+}
+.navbar41-action11 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.navbar41-action21 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.navbar41-burger-menu {
+  display: none;
+}
+.navbar41-icon1 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navbar41-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-space-space-twounits);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.navbar41-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar41-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.navbar41-logo {
+  height: 3rem;
+}
+.navbar41-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar41-icon3 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navbar41-links2 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar41-buttons2 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: center;
+}
+.find-your-battalion-fragment17 {
+  display: contents;
+}
+.find-your-battalion-text17 {
+  display: inline-block;
+}
+.find-your-battalion-fragment16 {
+  display: contents;
+}
+.find-your-battalion-text16 {
+  display: inline-block;
+}
+.find-your-battalion-fragment18 {
+  display: contents;
+}
+.find-your-battalion-text18 {
+  display: inline-block;
+}
+.find-your-battalion-fragment15 {
+  display: contents;
+}
+.find-your-battalion-text15 {
+  display: inline-block;
+}
+.find-your-battalion-fragment14 {
+  display: contents;
+}
+.find-your-battalion-text14 {
+  display: inline-block;
+}
+.find-your-battalion-fragment10 {
+  display: contents;
+}
+.find-your-battalion-text10 {
+  display: inline-block;
+}
+.find-your-battalion-fragment13 {
+  display: contents;
+}
+.find-your-battalion-text13 {
+  display: inline-block;
+}
+.find-your-battalion-fragment11 {
+  display: contents;
+}
+.find-your-battalion-text11 {
+  display: inline-block;
+}
+.find-your-battalion-fragment12 {
+  display: contents;
+}
+.find-your-battalion-text12 {
+  display: inline-block;
+}
+@media(max-width: 767px) {
+  .navbar41-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .navbar41-desktop-menu {
+    display: none;
+  }
+  .navbar41-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 479px) {
+  .navbar41-navbar-interactive {
+    padding: var(--dl-space-space-unit);
+  }
+  .navbar41-mobile-menu {
+    padding: var(--dl-space-space-unit);
+  }
+}
+
+.battalions-wrapper {
+  display: contents;
+}
+.battalions-pricing4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.battalions-max-width {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.battalions-section-title {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.battalions-text10 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-content1 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.battalions-text11 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-button1 {
+  width: 100%;
+  text-decoration: none;
+}
+.battalions-content2 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.battalions-text13 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-button2 {
+  width: 100%;
+  text-decoration: none;
+}
+.battalions-content3 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.battalions-text15 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-button3 {
+  width: 100%;
+  text-decoration: none;
+}
+.battalions-content4 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.battalions-text17 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-button4 {
+  width: 100%;
+  text-decoration: none;
+}
+.battalions-content5 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.battalions-text19 {
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.battalions-button5 {
+  width: 100%;
+  text-decoration: none;
+}
+.find-your-battalion-fragment23 {
+  display: contents;
+}
+.find-your-battalion-text23 {
+  display: inline-block;
+}
+.find-your-battalion-fragment26 {
+  display: contents;
+}
+.find-your-battalion-text26 {
+  display: inline-block;
+}
+.find-your-battalion-fragment25 {
+  display: contents;
+}
+.find-your-battalion-text25 {
+  display: inline-block;
+}
+.find-your-battalion-fragment29 {
+  display: contents;
+}
+.find-your-battalion-text29 {
+  display: inline-block;
+}
+.find-your-battalion-fragment20 {
+  display: contents;
+}
+.find-your-battalion-text20 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+}
+.find-your-battalion-fragment19 {
+  display: contents;
+}
+.find-your-battalion-text19 {
+  display: inline-block;
+}
+.find-your-battalion-fragment27 {
+  display: contents;
+}
+.find-your-battalion-text27 {
+  display: inline-block;
+}
+.find-your-battalion-fragment21 {
+  display: contents;
+}
+.find-your-battalion-text21 {
+  display: inline-block;
+}
+.find-your-battalion-fragment28 {
+  display: contents;
+}
+.find-your-battalion-text28 {
+  display: inline-block;
+}
+.find-your-battalion-fragment24 {
+  display: contents;
+}
+.find-your-battalion-text24 {
+  display: inline-block;
+}
+.find-your-battalion-fragment22 {
+  display: contents;
+}
+.find-your-battalion-text22 {
+  display: inline-block;
+}
+@media(max-width: 479px) {
+  .battalions-max-width {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .battalions-button1 {
+    width: 100%;
+  }
+  .battalions-button2 {
+    width: 100%;
+  }
+  .battalions-button3 {
+    width: 100%;
+  }
+  .battalions-button4 {
+    width: 100%;
+  }
+  .battalions-button5 {
+    width: 100%;
+  }
+}
+
+.footer-wrapper {
+  display: contents;
+}
+.footer-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-max-width {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-content {
+  gap: var(--dl-space-space-fourunits);
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(245, 244, 244, 0);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.footer-newsletter {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.footer-image1 {
+  height: 2rem;
+}
+.footer-text10 {
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.footer-text11 {
+  text-transform: capitalize;
+}
+.footer-text12 {
+  text-transform: capitalize;
+}
+.footer-text17 {
+  text-decoration: underline;
+}
+.footer-social-links {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer-link {
+  display: contents;
+}
+.footer-icon1 {
+  text-decoration: none;
+}
+.footer-links {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.footer-column1 {
+  gap: var(--dl-space-space-unit);
+  width: auto;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  max-width: 300px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.footer-footer-links {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-credits {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-row {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.find-your-battalion-fragment35 {
+  display: contents;
+}
+.find-your-battalion-text35 {
+  display: inline-block;
+}
+.find-your-battalion-fragment33 {
+  display: contents;
+}
+.find-your-battalion-text33 {
+  display: inline-block;
+}
+.find-your-battalion-fragment30 {
+  display: contents;
+}
+.find-your-battalion-text30 {
+  display: inline-block;
+}
+.find-your-battalion-fragment31 {
+  display: contents;
+}
+.find-your-battalion-text31 {
+  display: inline-block;
+}
+.find-your-battalion-fragment32 {
+  display: contents;
+}
+.find-your-battalion-text32 {
+  display: inline-block;
+}
+.find-your-battalion-fragment34 {
+  display: contents;
+}
+.find-your-battalion-text34 {
+  display: inline-block;
+}
+.find-your-battalion-fragment36 {
+  display: contents;
+}
+.find-your-battalion-text36 {
+  display: inline-block;
+}
+.footerroot-class-name {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+.footerroot-class-name1 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+.footerroot-class-name2 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+.footerroot-class-name3 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+.footerroot-class-name4 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+.footerroot-class-name5 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+@media(max-width: 991px) {
+  .footer-newsletter {
+    width: 300px;
+  }
+}
+@media(max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-newsletter {
+    width: 100%;
+  }
+  .footer-social-links {
+    align-self: flex-start;
+  }
+  .footer-links {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .footer-column1 {
+    align-items: center;
+  }
+  .footer-column1-title {
+    text-align: center;
+  }
+  .footer-footer-links {
+    align-self: center;
+  }
+  .footer-row {
+    gap: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 479px) {
+  .footer-social-links {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+  .footer-column1 {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-footer-links {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-credits {
+    gap: 0;
+  }
+  .footer-row {
+    gap: var(--dl-space-space-oneandhalfunits);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.find-your-battalion-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.find-your-battalion-fragment10 {
+  display: contents;
+}
+.find-your-battalion-text10 {
+  display: inline-block;
+}
+.find-your-battalion-fragment11 {
+  display: contents;
+}
+.find-your-battalion-text11 {
+  display: inline-block;
+}
+.find-your-battalion-fragment12 {
+  display: contents;
+}
+.find-your-battalion-text12 {
+  display: inline-block;
+}
+.find-your-battalion-fragment13 {
+  display: contents;
+}
+.find-your-battalion-text13 {
+  display: inline-block;
+}
+.find-your-battalion-fragment14 {
+  display: contents;
+}
+.find-your-battalion-text14 {
+  display: inline-block;
+}
+.find-your-battalion-fragment15 {
+  display: contents;
+}
+.find-your-battalion-text15 {
+  display: inline-block;
+}
+.find-your-battalion-fragment16 {
+  display: contents;
+}
+.find-your-battalion-text16 {
+  display: inline-block;
+}
+.find-your-battalion-fragment17 {
+  display: contents;
+}
+.find-your-battalion-text17 {
+  display: inline-block;
+}
+.find-your-battalion-fragment18 {
+  display: contents;
+}
+.find-your-battalion-text18 {
+  display: inline-block;
+}
+.find-your-battalion-fragment19 {
+  display: contents;
+}
+.find-your-battalion-text19 {
+  display: inline-block;
+}
+.find-your-battalion-fragment20 {
+  display: contents;
+}
+.find-your-battalion-text20 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+}
+.find-your-battalion-fragment21 {
+  display: contents;
+}
+.find-your-battalion-text21 {
+  display: inline-block;
+}
+.find-your-battalion-fragment22 {
+  display: contents;
+}
+.find-your-battalion-text22 {
+  display: inline-block;
+}
+.find-your-battalion-fragment23 {
+  display: contents;
+}
+.find-your-battalion-text23 {
+  display: inline-block;
+}
+.find-your-battalion-fragment24 {
+  display: contents;
+}
+.find-your-battalion-text24 {
+  display: inline-block;
+}
+.find-your-battalion-fragment25 {
+  display: contents;
+}
+.find-your-battalion-text25 {
+  display: inline-block;
+}
+.find-your-battalion-fragment26 {
+  display: contents;
+}
+.find-your-battalion-text26 {
+  display: inline-block;
+}
+.find-your-battalion-fragment27 {
+  display: contents;
+}
+.find-your-battalion-text27 {
+  display: inline-block;
+}
+.find-your-battalion-fragment28 {
+  display: contents;
+}
+.find-your-battalion-text28 {
+  display: inline-block;
+}
+.find-your-battalion-fragment29 {
+  display: contents;
+}
+.find-your-battalion-text29 {
+  display: inline-block;
+}
+.find-your-battalion-fragment30 {
+  display: contents;
+}
+.find-your-battalion-text30 {
+  display: inline-block;
+}
+.find-your-battalion-fragment31 {
+  display: contents;
+}
+.find-your-battalion-text31 {
+  display: inline-block;
+}
+.find-your-battalion-fragment32 {
+  display: contents;
+}
+.find-your-battalion-text32 {
+  display: inline-block;
+}
+.find-your-battalion-fragment33 {
+  display: contents;
+}
+.find-your-battalion-text33 {
+  display: inline-block;
+}
+.find-your-battalion-fragment34 {
+  display: contents;
+}
+.find-your-battalion-text34 {
+  display: inline-block;
+}
+.find-your-battalion-fragment35 {
+  display: contents;
+}
+.find-your-battalion-text35 {
+  display: inline-block;
+}
+.find-your-battalion-fragment36 {
+  display: contents;
+}
+.find-your-battalion-text36 {
+  display: inline-block;
+}
+.find-your-battalion-thq-dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.find-your-battalion-dropdown-toggle1 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius2);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.find-your-battalion-text37 {
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.find-your-battalion-dropdown-arrow {
+  transition: 0.3s;
+}
+.find-your-battalion-icon1 {
+  width: 18px;
+  height: 18px;
+  transition: 0.3s;
+}
+.find-your-battalion-dropdown-list {
+  left: 0%;
+  width: max-content;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  min-width: 100%;
+  transition: 0.3s;
+  align-items: stretch;
+  border-color: #D9D9D9;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+  list-style-type: none;
+  list-style-position: inside;
+}
+.find-your-battalion-dropdown1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.find-your-battalion-dropdown-toggle2 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.find-your-battalion-dropdown-toggle2:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.find-your-battalion-text38 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.find-your-battalion-dropdown2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.find-your-battalion-dropdown-toggle3 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.find-your-battalion-dropdown-toggle3:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.find-your-battalion-text39 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.find-your-battalion-dropdown3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: var(--dl-radius-radius-radius2);
+}
+.find-your-battalion-dropdown-toggle4 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.find-your-battalion-dropdown-toggle4:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.find-your-battalion-text40 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+@media(max-width: 1600px) {
+  .find-your-battalion-dropdown-list {
+    display: none;
+  }
+}

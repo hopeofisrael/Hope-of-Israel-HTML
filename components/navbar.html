@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hope of Israel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/untitled design.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Wait until the page content is loaded
+        const emailSignUpForm = document.getElementById('emailSignUpForm'); // Get the form element by ID
+
+        if (emailSignUpForm) { // If the form exists
+          emailSignUpForm.addEventListener('submit', function(e) { // Add event listener for form submission
+            e.preventDefault();  // Prevent the default form submission
+
+            // Get the values from the form fields by their IDs
+            const name = document.getElementById('thq-sign-up-6-name').value;
+            const email = document.getElementById('thq-sign-up-6-email').value;
+            const password = document.getElementById('thq-sign-up-6-password').value;
+
+            // Prepare the data to send to the Google Apps Script endpoint
+            const data = {
+              action: 'emailSignUp', // Action name for identification
+              name: name,            // Name field from the form
+              email: email,          // Email field from the form
+              password: password     // Password field from the form
+            };
+
+            // Send the data to the Google Apps Script endpoint using fetch
+            fetch('https://script.google.com/macros/s/AKfycbwmJTsUd07wqffZbfNi44RWUh7on1rQd-eBybQad47feBDlRFvY37KbzPij9xEZEKPhBg/exec', {
+              method: 'POST', // HTTP method POST to send data
+              headers: {
+                'Content-Type': 'application/json' // Set content type as JSON
+              },
+              body: JSON.stringify(data) // Convert the data object to a JSON string
+            })
+            .then(response => response.json()) // Parse the response as JSON
+            .then(data => {
+              if (data.success) { // If the response has a success flag
+                alert('Account created successfully!'); // Success message
+                window.location.href = '/success-page'; // Redirect to a success page
+              } else {
+                alert('Failed to create account.'); // Failure message
+              }
+            })
+            .catch(error => {
+              console.error('Error creating account:', error); // Log any errors
+              alert('An error occurred. Please try again.'); // Error message
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./navbar.css" rel="stylesheet" />
+      <header class="navbar-container">
+        <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+          <img
+            alt="Hope of Israel Logo"
+            src="public/external/logo-1500h.png"
+            class="navbar-image1"
+          />
+          <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
+            <nav class="navbar-links1">
+              <a
+                href="https://www.teleporthq.io"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment4">
+                  <span class="navbar-text4">Home</span>
+                </fragment>
+              </a>
+              <a
+                href="https://www.teleporthq.io"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment7">
+                  <span class="navbar-text7">About</span>
+                </fragment>
+              </a>
+              <a
+                href="https://www.teleporthq.io"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment6">
+                  <span class="navbar-text6">Join a Battalion</span>
+                </fragment>
+              </a>
+              <a
+                href="https://www.teleporthq.io"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment2">
+                  <span class="navbar-text2">Global Leaderboard</span>
+                </fragment>
+              </a>
+              <a
+                href="https://www.teleporthq.io"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment5">
+                  <span class="navbar-text5">Contact</span>
+                </fragment>
+              </a>
+              <a
+                href="https://forms.gle/hxR3wDErx3ohRpYQ7"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment9">
+                  <span class="navbar-text9">Global Completion Count</span>
+                </fragment>
+              </a>
+              <a
+                href="https://www.familysearch.org/temple/ordinances-ready"
+                class="thq-body-small thq-link"
+              >
+                <fragment class="navbar-fragment8">
+                  <span class="navbar-text8">Find Names</span>
+                </fragment>
+              </a>
+            </nav>
+          </div>
+          <div data-thq="thq-burger-menu" class="navbar-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="navbar-icon1">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-nav">
+              <div class="navbar-top">
+                <img
+                  alt="Hope of Israel Logo"
+                  src="public/external/logo-1500h.png"
+                  class="navbar-logo"
+                />
+                <div data-thq="thq-close-menu" class="navbar-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="navbar-icon3">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="navbar-links2">
+                <a href="index.html" class="thq-body-small thq-link">
+                  <fragment class="navbar-fragment4">
+                    <span class="navbar-text4">Home</span>
+                  </fragment>
+                </a>
+                <a href="about.html" class="thq-body-small thq-link">
+                  <fragment class="navbar-fragment7">
+                    <span class="navbar-text7">About</span>
+                  </fragment>
+                </a>
+                <a
+                  href="find-your-battalion.html"
+                  class="thq-body-small thq-link"
+                >
+                  <fragment class="navbar-fragment6">
+                    <span class="navbar-text6">Join a Battalion</span>
+                  </fragment>
+                </a>
+                <a
+                  href="https://keepthescore.com/board/jmgqcvtcqpdmr/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="thq-body-small thq-link"
+                >
+                  <fragment class="navbar-fragment2">
+                    <span class="navbar-text2">Global Leaderboard</span>
+                  </fragment>
+                </a>
+                <a href="contact.html" class="thq-body-small thq-link">
+                  <fragment class="navbar-fragment5">
+                    <span class="navbar-text5">Contact</span>
+                  </fragment>
+                </a>
+                <a
+                  href="https://forms.gle/sBaDddRRyqQP5ikX7"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="navbar-link53 thq-body-small thq-link"
+                >
+                  <fragment class="navbar-fragment3">
+                    <span class="navbar-text3">Request a Battalion</span>
+                  </fragment>
+                </a>
+                <a
+                  href="https://www.familysearch.org/temple/ordinances-ready"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="navbar-link54 thq-body-small thq-link"
+                >
+                  <fragment class="navbar-fragment1">
+                    <span class="navbar-text1">Find Names</span>
+                  </fragment>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </header>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

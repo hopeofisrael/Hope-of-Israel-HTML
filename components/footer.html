@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hope of Israel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/untitled design.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Wait until the page content is loaded
+        const emailSignUpForm = document.getElementById('emailSignUpForm'); // Get the form element by ID
+
+        if (emailSignUpForm) { // If the form exists
+          emailSignUpForm.addEventListener('submit', function(e) { // Add event listener for form submission
+            e.preventDefault();  // Prevent the default form submission
+
+            // Get the values from the form fields by their IDs
+            const name = document.getElementById('thq-sign-up-6-name').value;
+            const email = document.getElementById('thq-sign-up-6-email').value;
+            const password = document.getElementById('thq-sign-up-6-password').value;
+
+            // Prepare the data to send to the Google Apps Script endpoint
+            const data = {
+              action: 'emailSignUp', // Action name for identification
+              name: name,            // Name field from the form
+              email: email,          // Email field from the form
+              password: password     // Password field from the form
+            };
+
+            // Send the data to the Google Apps Script endpoint using fetch
+            fetch('https://script.google.com/macros/s/AKfycbwmJTsUd07wqffZbfNi44RWUh7on1rQd-eBybQad47feBDlRFvY37KbzPij9xEZEKPhBg/exec', {
+              method: 'POST', // HTTP method POST to send data
+              headers: {
+                'Content-Type': 'application/json' // Set content type as JSON
+              },
+              body: JSON.stringify(data) // Convert the data object to a JSON string
+            })
+            .then(response => response.json()) // Parse the response as JSON
+            .then(data => {
+              if (data.success) { // If the response has a success flag
+                alert('Account created successfully!'); // Success message
+                window.location.href = '/success-page'; // Redirect to a success page
+              } else {
+                alert('Failed to create account.'); // Failure message
+              }
+            })
+            .catch(error => {
+              console.error('Error creating account:', error); // Log any errors
+              alert('An error occurred. Please try again.'); // Error message
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./footer.css" rel="stylesheet" />
+      <footer class="footer-container thq-section-padding footer">
+        <div class="footer-max-width thq-section-max-width">
+          <div class="footer-content">
+            <div class="footer-newsletter">
+              <img
+                alt="Temple Work Progress Tracker"
+                src="public/untitled%20design-3-1500h.png"
+                class="footer-image1"
+              />
+              <span class="thq-body-small">
+                <span class="footer-text10">Contact</span>
+                <br class="footer-text11" />
+                <br class="footer-text12" />
+                <span>+&nbsp;</span>
+                <span>(208) 595-7956</span>
+                <br />
+                <span>hopeofisraelofficial@gmail.com</span>
+                <br class="footer-text17" />
+                <br />
+              </span>
+              <div class="footer-social-links">
+                <a
+                  href="https://www.instagram.com/hope_of_israel_official/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-link"
+                >
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="footer-icon1 thq-icon-small"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <div class="footer-column1">
+                <strong class="thq-body-large footer-column1-title">
+                  <fragment class="footer-fragment7">
+                    <span class="footer-text25">Quick Links</span>
+                  </fragment>
+                </strong>
+                <div class="footer-footer-links">
+                  <a href="about.html" class="thq-body-small">
+                    <fragment class="footer-fragment3">
+                      <span class="footer-text21">About Us</span>
+                    </fragment>
+                  </a>
+                  <a href="contact.html" class="thq-body-small">
+                    <fragment class="footer-fragment4">
+                      <span class="footer-text22">Contact Us</span>
+                    </fragment>
+                  </a>
+                  <a href="find-your-battalion.html" class="thq-body-small">
+                    <fragment class="footer-fragment5">
+                      <span class="footer-text23">Find Your Battalion</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/hope_of_israel_official/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="footer-fragment2">
+                      <span class="footer-text20">Follow Us</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://forms.gle/hxR3wDErx3ohRpYQ7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="footer-fragment6">
+                      <span class="footer-text24">Follow Us</span>
+                    </fragment>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-credits">
+            <div class="footer-row">
+              <span class="thq-body-small">
+                <fragment class="footer-fragment1">
+                  <span class="footer-text19">
+                    © 2024 Hope of Israel. All Rights Reserved.
+                  </span>
+                </fragment>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
